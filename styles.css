@@ -50,7 +50,12 @@ html {
 }
 .collapsible-header{
     background: gray;
-    text-align: center
+    text-align: center;
+    font-size: 25px;
+    color: black
+}
+.collapsible_icon{
+    margin: 5px 30px;
 }
 #bio{
     font-family: 'Press Start 2P', cursive;
