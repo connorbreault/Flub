@@ -17,12 +17,55 @@ html {
     background-position: center
 } */
 #mainContainer{
-    width: 100%;
-    margin: 20px auto
+    width: 85%;
+    margin: 20px auto;
+    background: gray;
+    border: 2px outset black;
+    text-align: center;
+    padding: 5px
+}
+#sponsorContainer{
+    width: 85%;
+    margin: 20px auto;
+    background: gray;
+    border: 2px outset black;
+    text-align: center
 }
 .headerPic{
-    width: 90%;
+    width: 100%;
     margin: auto;
     display:block;
     margin: auto;
+}
+#flubHeader{
+    color: #8FC93A;
+    font-family: 'Audiowide', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 60px;
+}
+#AEHeader{
+    font-family: 'Marck Script', cursive;
+    color: #01BAEF;
+}
+.collapsible-header{
+    background: gray;
+    text-align: center
+}
+#bio{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 5px
+}
+#members{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 5px
+}
+.collection-item{
+    background: gray !important;
+    height: 70px;
+    font-size: 40px
 }

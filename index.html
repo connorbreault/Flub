@@ -31,8 +31,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Marck+Script|Press+Start+2P&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./styles.css">
 
@@ -47,9 +54,60 @@
 <body>
 
     <div id="mainContainer">
-        <img src="./imgs/Flub2020.jpg" alt="Flub" class="headerPic">
+        <img src="./imgs/FLUB.jpg" alt="Flub" class="headerPic">
+        <h2 id="flubHeader">Flub</h2>
+        <h3 id="AEHeader">The Artisan Era</h3>
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body"><span>
+                        <p id="bio">Based out of Sacramento, CA, Flub is comprised of former and current members of
+                            Rivers of Nihil,
+                            Alterbeast,
+                            Vale of Pnath, Psychosomatic and Becomes Astral. Influenced by a world of different sounds
+                            stretching from
+                            Tech Death, Metalcore, Progressive Metal and Deathcore; to sounds of Latin, Neo-Classical,
+                            and Jazz. Flub
+                            aims to bring the unexpected, in a relentless face-shattering color-bursting demented
+                            fantasy.
+                        </p>
+                        <hr width="75%" style="color: black">
+                        <ol id="members">
+                            <li>Vocals - Michael Alvarez</li>
+                            <li>Guitar / Songwriter / Programming - Eloy Montes</li>
+                            <li>Drums - Jared Klein</li>
+                            <li>Guitar - Viktor Hansen</li>
+                            <li>Bass - Liam Frith</li>
+                        </ol>
+                    </span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+        </ul>
+        <div class="collection">
+            <a href="https://open.spotify.com/artist/6NJgAz9BChhrlgXQrn3kJg" target="_blank"
+                class="collection-item">Spotify</a>
+            <a href="https://music.apple.com/au/artist/flub/1460180655" target="_blank" class="collection-item">Apple
+                Music</a>
+            <a href="https://www.youtube.com/channel/UCDnQ6LFKEULo49BgPdy8bOg" target="_blank"
+                class="collection-item">Youtube</a>
+            <a href="https://flub.bigcartel.com/" target="_blank" class="collection-item">Big Cartel Merch</a>
+            <a href="https://www.theartisanerastore.com/category/flub" target="_blank" class="collection-item">Artisan
+                Era Merch</a>
+        </div>
     </div>
 
+    <div id="sponsorContainer">
+        <h2>Brought to you by</h2>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="./logic.js"></script>
 
 </body>
