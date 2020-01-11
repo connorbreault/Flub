@@ -9,9 +9,10 @@ html {
     width: 85%;
     margin: 20px auto;
     background: gray;
-    border: 2px outset black;
     text-align: center;
-    padding: 5px
+    border: 2px outset black;
+    border-radius: 15px;
+    padding: 10px;
 }
 .headerPic{
     width: 100%;
