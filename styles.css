@@ -19,12 +19,9 @@ html {
     display:block;
     margin: auto;
 }
-#flubHeader{
-    color: #8FC93A;
-    font-family: 'Audiowide', cursive;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-    font-size: 60px;
+#headerLogo{
+    width: 60%;
+    margin: 25px auto 0px auto;
 }
 #AEHeader{
     font-family: 'Marck Script', cursive;
@@ -38,7 +35,7 @@ html {
 }
 .collapsibleHeadText{
     margin: auto;
-    font-family: 'New Rocker', cursive;
+    font-family: 'Titillium Web', sans-serif;
 }
 .collapsible_icon{
     margin: auto 30px;
