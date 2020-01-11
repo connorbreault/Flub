@@ -1,9 +1,10 @@
-html { 
+body { 
     background: url(imgs/FLUB_no_logo.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    opacity: 0.95
 }
 #mainContainer{
     width: 85%;
@@ -64,7 +65,8 @@ html {
     padding: 5px;
     background: gray;
     border: 2px outset black;
-    text-align: center
+    border-radius: 15px;
+    text-align: center;
 }
 #broughtBy{
     font-family: 'Press Start 2P', cursive;
