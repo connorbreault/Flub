@@ -4,14 +4,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: 150%;
-    background-position: initial;
+    background-position: top;
     opacity: 0.95
-}
-#bioHeader{
-    background: url(imgs/buttons/button\ 1\ -\ biography.png)
-}
-#upcomingHeader{
-    background: url(imgs/buttons/button\ 2\ -\ tourdates.png)
 }
 #mainContainer{
     width: 85%;
@@ -37,15 +31,20 @@ body {
 }
 .collapsible-header{
     height: 125px;
-    background-size: cover;
+    background-size: cover !important;
     border: none
 }
-.collapsibleHeadText{
-    margin: auto;
-    font-family: 'Titillium Web', sans-serif;
+#bioHeader{
+    background: url(imgs/buttons/button\ 1\ -\ biography.png)
 }
-.collapsible_icon{
-    margin: auto 30px;
+#showsHeader{
+    background: url(imgs/buttons/button\ 2\ -\ tourdates.png)
+}
+#newsHeader{
+    background: url(imgs/buttons/button\ 3\ -\ news.png)
+}
+#discographyHeader{
+    background: url(imgs/buttons/button\ 4\ -\ discography.png)
 }
 #bio{
     font-family: 'Press Start 2P', cursive;
@@ -67,7 +66,8 @@ body {
 
 @media only screen and ( min-width: 545px ) {
     body{
-        background-size: cover
+        background-size: cover;
+        background-attachment: scroll;
     }
     #mainContainer{
         width: 45%
