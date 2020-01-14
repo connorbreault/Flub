@@ -36,9 +36,9 @@ body {
     margin: -10px auto
 }
 .collapsible-header:hover{
-    -webkit-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.15);
-    -moz-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.15);
-    box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.15);
+    -webkit-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
+    -moz-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
+    box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
 }
 .collapsible-body{
     padding: 0px;
@@ -48,7 +48,25 @@ body {
     background: gray;
     width: 90%;
     margin: auto auto 15px auto;
-    padding: 5px
+    padding: 5px;
+    text-align: center
+}
+.linkText{
+    text-decoration: underline white;
+    font-family: 'Lora', serif;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.69);
+}
+.linkText:hover{
+    color: purple
+}
+.linkImg{
+    border-radius: 15px;
+}
+.linkImg:hover{
+    -webkit-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+-moz-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
 }
 #bioHeader{
     background: url(imgs/buttons/button\ 1\ -\ biography.png)
@@ -76,18 +94,6 @@ body {
 }
 #contactHeader{
     background: url(imgs/buttons/button\ 9\ -\ contact.png)
-}
-#bio{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-    line-height: 25px;
-    padding: 5px
-}
-#members{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 15px;
-    line-height: 20px;
-    padding: 5px
 }
 .collection-item{
     background: gray !important;
