@@ -5,7 +5,6 @@ body {
     -o-background-size: cover;
     background-size: 150%;
     background-position: top;
-    opacity: 0.95
 }
 #mainContainer{
     width: 85%;
@@ -33,7 +32,8 @@ body {
     background-size: cover !important;
     background-repeat: round !important;
     border: none;
-    border-radius: 15px
+    border-radius: 15px;
+    margin: -10px auto
 }
 .collapsible-header:hover{
     -webkit-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.15);
@@ -43,6 +43,11 @@ body {
 .collapsible-body{
     padding: 0px;
     border: none
+}
+.rainbowBody{
+    background: gray;
+    width: 90%;
+    margin: auto
 }
 #bioHeader{
     background: url(imgs/buttons/button\ 1\ -\ biography.png)
