@@ -55,16 +55,9 @@
 <body>
 
     <div id="mainContainer">
-        <img src="./imgs/FLUB.jpg" alt="Flub" class="headerPic">
-        <img src="./imgs/flub-logo.png" alt="Flub" id="headerLogo">
-        <h3 id="AEHeader">The Artisan Era</h3>
         <ul class="collapsible">
             <li>
-                <div class="collapsible-header"><i
-                        class="material-icons collapsible_icon cyan-text text-lighten-5">info</i>
-                    <div class="collapsibleHeadText cyan-text text-lighten-5">
-                        Bio
-                    </div>
+                <div class="collapsible-header" id="bioHeader">
                 </div>
                 <div class="collapsible-body"><span>
                         <p id="bio">Based out of Sacramento, CA, Flub is comprised of former and current members of
@@ -88,11 +81,8 @@
                     </span></div>
             </li>
             <li>
-                <div class="collapsible-header"><i
-                        class="material-icons collapsible_icon cyan-text text-lighten-5">event</i>
-                    <div class="collapsibleHeadText cyan-text text-lighten-5">Upcoming Shows</div>
-                </div>
-                <div class="collapsible-body"><span>Shows will go here.</span></div>
+                <div class="collapsible-header" id="upcomingHeader">
+                    <div class="collapsible-body"><span>Shows will go here.</span></div>
             </li>
             <li>
                 <div class="collapsible-header"><i
@@ -164,9 +154,6 @@
         </ul>
     </div>
 
-    <div id="sponsorContainer">
-        <h2 id="broughtBy">Brought to you by</h2>
-    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="./logic.js"></script>

@@ -1,18 +1,21 @@
 body { 
-    background: url(imgs/FLUB_no_logo.jpg) no-repeat center center fixed; 
+    background: url(imgs/site\ background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 150%;
+    background-position: initial;
     opacity: 0.95
+}
+#bioHeader{
+    background: url(imgs/buttons/button\ 1\ -\ biography.png)
+}
+#upcomingHeader{
+    background: url(imgs/buttons/button\ 2\ -\ tourdates.png)
 }
 #mainContainer{
     width: 85%;
-    margin: 20px auto;
-    background: gray;
-    text-align: center;
-    border: 2px outset black;
-    border-radius: 15px;
+    margin: 250px auto;
     padding: 10px;
 }
 .headerPic{
@@ -29,11 +32,13 @@ body {
     font-family: 'Marck Script', cursive;
     color: #01BAEF;
 }
+.collapsible{
+    border: none
+}
 .collapsible-header{
-    background: gray;
-    text-align: center;
-    font-size: 25px;
-    color: black
+    height: 125px;
+    background-size: cover;
+    border: none
 }
 .collapsibleHeadText{
     margin: auto;
@@ -59,22 +64,12 @@ body {
     height: 70px;
     font-size: 40px
 }
-#sponsorContainer{
-    width: 85%;
-    margin: 20px auto;
-    padding: 5px;
-    background: gray;
-    border: 2px outset black;
-    border-radius: 15px;
-    text-align: center;
-}
-#broughtBy{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 25px
-}
 
 @media only screen and ( min-width: 545px ) {
-    #mainContainer, #sponsorContainer{
+    body{
+        background-size: cover
+    }
+    #mainContainer{
         width: 45%
     }
 }
