@@ -47,7 +47,8 @@ body {
 .rainbowBody{
     background: gray;
     width: 90%;
-    margin: auto
+    margin: auto auto 15px auto;
+    padding: 5px
 }
 #bioHeader{
     background: url(imgs/buttons/button\ 1\ -\ biography.png)
