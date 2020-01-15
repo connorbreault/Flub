@@ -67,7 +67,7 @@ body {
     text-decoration: underline white;
 }
 .linkText:hover{
-    color: purple
+    color: #1c3433
 }
 .linkImg{
     border-radius: 15px;
