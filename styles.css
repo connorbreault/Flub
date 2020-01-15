@@ -28,12 +28,15 @@ body {
     border: none
 }
 .collapsible-header{
-    height: 55px;
+    height: 65px;
     background-size: cover !important;
     background-repeat: round !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     border: none;
     border-radius: 15px;
-    margin: -10px auto
+    margin: -8px auto
 }
 .collapsible-header:hover{
     -webkit-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
@@ -108,12 +111,24 @@ body {
 }
 
 @media only screen and ( min-width: 545px ) {
-    body{
+body{
     background-size: cover;
     background-attachment: scroll;
-    }
-    #mainContainer{
-    width: 40%;
+}
+#mainContainer{
+    width: 50%;
     margin: 40% auto auto auto
+}
+.collapsible-header{
+    height: 70px
+}
+}
+@media only screen and ( min-width: 800px ) {
+    #mainContainer{
+        width: 35%
+    }
+    .collapsible-header{
+        height: 95px;
+        margin: -10px auto
     }
 }
