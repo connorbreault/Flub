@@ -167,14 +167,14 @@ body{
     }
 }
 
-#definition{
+.definitionAnimation{
+    animation: loadTransition 1s
+}
+.headLogoAnimation{
     animation: loadTransition 3s
 }
-#headLogo{
-    animation: loadTransition 10s
-}
-.mainCollapsible{
-    animation: loadTransition 10s
+.mainCollapsibleAnimation{
+    animation: loadTransition 5s
 }
 
 @keyframes loadTransition {
