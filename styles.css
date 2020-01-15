@@ -166,22 +166,3 @@ body{
         margin: -10px auto
     }
 }
-
-.definitionAnimation{
-    animation: loadTransition 1s
-}
-.headLogoAnimation{
-    animation: loadTransition 3s
-}
-.mainCollapsibleAnimation{
-    animation: loadTransition 5s
-}
-
-@keyframes loadTransition {
-    from{
-        opacity: 0
-    }
-    to{
-        opacity: 1
-    }
-}
