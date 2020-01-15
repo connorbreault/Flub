@@ -6,9 +6,12 @@ body {
     background-size: 150%;
     background-position: top;
 }
+#definition{
+    width: 100%
+}
 #mainContainer{
     width: 85%;
-    margin: 65% auto auto auto;
+    margin: auto
 }
 .headerPic{
     width: 100%;
@@ -115,9 +118,11 @@ body{
     background-size: cover;
     background-attachment: scroll;
 }
+#definition{
+    width: 75%
+}
 #mainContainer{
     width: 50%;
-    margin: 40% auto auto auto
 }
 .collapsible-header{
     height: 70px
