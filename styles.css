@@ -55,7 +55,7 @@ body {
     background: url(./imgs/pages/rainbow.png);
     background-size: cover;
     background-repeat: round;
-    width: 95%;
+    width: 100%;
     margin: auto auto 15px auto;
     padding: 5px;
     text-align: center;
@@ -66,7 +66,6 @@ body {
 }
 .linkText{
     color: white;
-
     text-decoration: underline white;
 }
 .linkText:hover{
@@ -116,7 +115,7 @@ body {
     font-size: 40px
 }
 .albumCover{
-    width: 115%
+    width: 100%
 }
 .contactEmails{
     font-size: 10px
@@ -129,7 +128,7 @@ body {
     color: #01BAEF
 }
 .followLinks{
-    width: 100%
+    width: 115%
 }
 #bcLink{
     width: 125% !important;

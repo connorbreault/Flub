@@ -1,6 +1,10 @@
 $(document).ready(function () {
     $('.collapsible').collapsible();
 });
+function js_Load() {
+    document.body.style.visibility = 'visible'
+}
+
 $("#FCSignupButton").on("click", function () {
     let newSignup = $("#signupEmail").val()
     if (newSignup === "") {
