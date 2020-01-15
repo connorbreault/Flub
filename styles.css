@@ -7,7 +7,7 @@ body {
     background-position: top;
 }
 #definition{
-    width: 100%
+    width: 75%
 }
 #mainContainer{
     width: 85%;
@@ -51,8 +51,10 @@ body {
     border: none
 }
 .rainbowBody{
-    background: gray;
-    width: 90%;
+    background: url(./imgs/pages/rainbow.png);
+    background-size: cover;
+    background-repeat: round;
+    width: 95%;
     margin: auto auto 15px auto;
     padding: 5px;
     text-align: center;
@@ -104,6 +106,9 @@ body {
 #contactHeader{
     background: url(imgs/buttons/button\ 9\ -\ contact.png)
 }
+#contactBody{
+    padding: 15px !important
+}
 .collection-item{
     background: gray !important;
     height: 70px;
@@ -112,7 +117,22 @@ body {
 .albumCover{
     width: 100%
 }
+.contactEmails{
+    font-size: 10px
+}
+#FCSignupButton{
+    background: url(./imgs/pages/rainbow.png);
+}
+#FCSignupButton:hover{
+    border: #01BAEF 2px solid;
+    color: #01BAEF
+}
 
+@media only screen and ( min-width: 350px ) {
+    .contactEmails{
+        font-size: inherit
+    }
+}
 @media only screen and ( min-width: 545px ) {
 body{
     background-size: cover;
@@ -125,12 +145,15 @@ body{
     width: 50%;
 }
 .collapsible-header{
-    height: 70px
+    height: 80px
+}
+#nomadicEmail{
+    font-size: inherit
 }
 }
 @media only screen and ( min-width: 800px ) {
     #mainContainer{
-        width: 35%
+        width: 40%
     }
     .collapsible-header{
         height: 95px;
