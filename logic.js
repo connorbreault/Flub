@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.collapsible').collapsible();
+    $('.materialboxed').materialbox();
 });
 function js_Load() {
     document.body.style.visibility = 'visible'
