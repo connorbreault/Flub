@@ -5,6 +5,7 @@ body {
     -o-background-size: cover;
     background-size: 150%;
     background-position: top;
+    background-attachment: fixed
 }
 #definition{
     width: 75%
@@ -115,7 +116,7 @@ body {
     font-size: 40px
 }
 .albumCover{
-    width: 100%
+    width: 115%
 }
 .contactEmails{
     font-size: 10px
@@ -126,6 +127,12 @@ body {
 #FCSignupButton:hover{
     border: #01BAEF 2px solid;
     color: #01BAEF
+}
+.followLinks{
+    width: 100%
+}
+#bcLink{
+    width: 125% !important;
 }
 
 @media only screen and ( min-width: 350px ) {
