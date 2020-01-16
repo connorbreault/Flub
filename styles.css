@@ -12,10 +12,7 @@ body {
     width: 85%;
     margin: auto
 }
-.collapsible{
-    border: none
-}
-.collapsible-header{
+.mainHeader{
     height: 65px;
     background-size: cover !important;
     background-repeat: round !important;
@@ -25,13 +22,13 @@ body {
     border: none;
     border-radius: 15px;
     margin: -8px auto
-}
-.collapsible-header:hover{
+} */
+.mainHeader:hover{
     -webkit-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
     -moz-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
     box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
 }
-.collapsible-body{
+.mainBody{
     padding: 0px;
     border: none
 }
@@ -87,6 +84,18 @@ body {
     -moz-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
     box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
 }
+.buyTickets{
+    background: none;
+    border: gold solid 1px;
+    border-radius: 20px;
+}
+.buyTickets:hover{
+    color: gold;
+    -webkit-box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
+    background: none !important
+}
 
 @media only screen and ( min-width: 350px ) {
     .contactEmails{
@@ -104,7 +113,7 @@ body{
 #mainContainer{
     width: 50%;
 }
-.collapsible-header{
+.mainHeader{
     height: 80px
 }
 #nomadicEmail{
@@ -115,7 +124,7 @@ body{
     #mainContainer{
         width: 35%
     }
-    .collapsible-header{
+    .mainHeader{
         height: 95px;
         margin: -10px auto
     }
