@@ -16,8 +16,11 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="./reset.css">
     <!--INSERT RESET-->
+    <link rel="stylesheet" href="./reset.css">
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
 
     <!--Import Google Icon Font-->
 
@@ -44,9 +47,8 @@
 
     <link rel="stylesheet" href="./styles.css">
 
-
-
     <title>Flub</title>
+
 
 </head>
 
@@ -307,8 +309,8 @@
                                     </div>
                                 </div>
                                 <div id="thanksSignup" class="hide" style="padding: 15px">
-                                    <h5>THANKS FOR SIGNING UP!</h5>
-                                    <h6>KEEP YOUR EYeS PEELED FOR UDATES!</h6>
+                                    <h5><span id="signedupEmail"></span> HAS BEEN SIGNED UP!</h5>
+                                    <h6>KEEP YOUR EYES PEELED FOR UDATES!</h6>
                                 </div>
                             </div>
                         </span></div>
@@ -335,6 +337,13 @@
         </div>
     </div>
 
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script> -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="./logic.js"></script>
