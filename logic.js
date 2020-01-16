@@ -29,7 +29,6 @@ $(document).ready(function () {
             $("#signedupEmail").html(newSignup)
             firebase.database().ref().push({
                 email: newSignup,
-                // dateAdded: firebase.database.ServerValue
             })
             $("#FCSignup").addClass("hide")
             $("#thanksSignup").removeClass("hide")
