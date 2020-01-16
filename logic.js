@@ -12,6 +12,7 @@ $("#FCSignupButton").on("click", function () {
     if (newSignup === "") {
         alert("Please fill out the input")
     } else {
-        alert(newSignup)
+        $("#FCSignup").addClass("hide")
+        $("#thanksSignup").removeClass("hide")
     }
 })
