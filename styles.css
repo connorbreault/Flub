@@ -12,20 +12,6 @@ body {
     width: 85%;
     margin: auto
 }
-.headerPic{
-    width: 100%;
-    margin: auto;
-    display:block;
-    margin: auto;
-}
-#headerLogo{
-    width: 60%;
-    margin: 25px auto 0px auto;
-}
-#AEHeader{
-    font-family: 'Marck Script', cursive;
-    color: #01BAEF;
-}
 .collapsible{
     border: none
 }
@@ -77,40 +63,8 @@ body {
     -moz-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
     box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
 }
-#bioHeader{
-    background: url(imgs/buttons/button\ 1\ -\ biography.png)
-}
-#showsHeader{
-    background: url(imgs/buttons/button\ 2\ -\ tourdates.png)
-}
-#newsHeader{
-    background: url(imgs/buttons/button\ 3\ -\ news.png)
-}
-#discographyHeader{
-    background: url(imgs/buttons/button\ 4\ -\ discography.png)
-}
-#videosHeader{
-    background: url(imgs/buttons/button\ 5\ -\ video.png)
-}
-#merchHeader{
-    background: url(imgs/buttons/button\ 6\ -\ merchandise.png)
-}
-#followHeader{
-    background: url(imgs/buttons/button\ 7\ -\ follow.png)
-}
-#flubClubHeader{
-    background: url(imgs/buttons/button\ 8\ -\ flubclub.png)
-}
-#contactHeader{
-    background: url(imgs/buttons/button\ 9\ -\ contact.png)
-}
 #contactBody{
     padding: 15px !important
-}
-.collection-item{
-    background: gray !important;
-    height: 70px;
-    font-size: 40px
 }
 .albumCover{
     width: 100%
