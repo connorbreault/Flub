@@ -24,7 +24,7 @@ $(document).ready(function () {
     var database = firebase.database()
 
 
-    // Render Shows
+    // Shows list
     const shows = [
         {
             date: "1-24",
@@ -51,52 +51,31 @@ $(document).ready(function () {
             link: ""
         },
     ]
+
+    // Render Shows
     for (let i = 0; i < shows.length; i++) {
         let showListItem = (`
         <li>
-            <div class="collapsible-header"
-                style="background: none; border: gold solid 1px; border-radius: 15px">
-                <div style="width: 25%">
-                    ${shows[i].date}
-                </div>
-                <div style="width: 75%">
-                    ${shows[i].city}
-                </div>
+            <div class="collapsible-header" style="background: none; border: gold solid 1px; border-radius: 15px">
+                <div style="width: 25%">${shows[i].date}</div><div style="width: 75%">${shows[i].city}</div>
             </div>
             <div class="collapsible-body" style="border: none; padding: 0px">
                 <div class="row">
-                    <div class="col s8">
-                        <h6>Venue</h6>
-                        <p style="word-wrap: break-word">
-                        ${shows[i].venue}
-                        </p>
-                    </div>
-                    <div class="col s4">
-                        <h6>Time</h6>
-                        <p>
-                        ${shows[i].time}
-                        </p>
+                    <div class="col s8"><h6>Venue</h6><p style="word-wrap: break-word">${shows[i].venue}</p></div>
+                    <div class="col s4"><h6>Time</h6><p>${shows[i].time}</p></div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <h6>Bands</h6><ol>${shows[i].bands.map(function (band) { return "<li>" + band + "</li>" })}</ol>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12">
-                        <h6>Bands</h6>
-                        <ol>
-                        ${shows[i].bands.map(function (band) {
-            return "<li>" + band + "</li>"
-        })}
-                        </ol>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col s12">
-                        <a class="waves-effect waves-light btn buyTickets" href="${shows[i].time}">Buy
-                        Tickets</a>
-                        </div>
-                        </div>
-                        </div>
-                        </li>
-                        `)
+                        <a class="waves-effect waves-light btn buyTickets" href="${shows[i].time}">Buy Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </li>`)
         $("#showCollapsible").append(showListItem)
     }
 
