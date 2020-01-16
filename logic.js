@@ -28,6 +28,8 @@ $(document).ready(function () {
     const shows = [
         {
             date: "1-24",
+            day: "24",
+            month: "1",
             city: "Orangeville, Ca",
             venue: "The Boardwalk",
             time: "TBD",
@@ -36,6 +38,8 @@ $(document).ready(function () {
         },
         {
             date: "1-25",
+            day: "25",
+            month: "1",
             city: "Lakewood, Ca",
             venue: "Regal Inn",
             time: "TBD",
@@ -44,17 +48,26 @@ $(document).ready(function () {
         },
         {
             date: "1-26",
+            day: "26",
+            month: "1",
             city: "Santa Rosa, Ca",
             venue: "The Arlene Francis Center",
             time: "TBD",
             bands: ["The Kennedy Veil", "Flub", "Equipoise"],
             link: ""
-        },
+        }
     ]
+
+    // Date functions
+    let D = new Date()
+    let currentDay = D.getDate()
+    let currentMonth = (D.getMonth() + 1)
 
     // Render Shows
     for (let i = 0; i < shows.length; i++) {
-        let showListItem = (`
+        // Check dates
+        if ((shows[i].day - currentDay) >= 0 && (shows[i].month - currentMonth) >= 0) {
+            let showListItem = (`
         <li>
             <div class="collapsible-header" style="background: none; border: gold solid 1px; border-radius: 15px">
                 <div style="width: 25%">${shows[i].date}</div><div style="width: 75%">${shows[i].city}</div>
@@ -76,13 +89,12 @@ $(document).ready(function () {
                 </div>
             </div>
         </li>`)
-        $("#showCollapsible").append(showListItem)
+            $("#showCollapsible").append(showListItem)
+        }
     }
-
 
     // Empty signup
     let newSignup = ""
-
     // On flub club submission
     $("#FCSignupButton").on("click", function () {
         let newSignup = $("#signupEmail").val()
@@ -93,6 +105,7 @@ $(document).ready(function () {
             // Send to firebase
             firebase.database().ref().push({
                 email: newSignup,
+                joined: firebase.database.ServerValue.TIMESTAMP
             })
             // Toggle signup message
             $("#signedupEmail").html(newSignup)

@@ -40,7 +40,7 @@ body {
     margin: auto auto 15px auto;
     padding: 5px;
     text-align: center;
-    text-decoration: underline white;
+    text-decoration: underline white !important;
     font-family: 'Cinzel', serif;
     color: white;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.69);
