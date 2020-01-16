@@ -90,7 +90,7 @@ body {
 
 @media only screen and ( min-width: 350px ) {
     .contactEmails{
-        font-size: inherit
+    font-size: inherit
     }
 }
 @media only screen and ( min-width: 545px ) {

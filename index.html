@@ -1,80 +1,63 @@
-<!--Materialize html-->
-
-
-
 <!DOCTYPE html>
-
 <html lang="en">
 
-
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!--INSERT RESET-->
+    <!-- Reset -->
     <link rel="stylesheet" href="./reset.css">
-
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
-
-    <!--Import Google Icon Font-->
-
+    <!-- Import Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <!-- Compiled and minified CSS -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
     <!-- Compiled and minified JavaScript -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
-
+    <!-- Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Audiowide|Marck+Script|Lora|New+Rocker|Titillium+Web|Cinzel&display=swap"
         rel="stylesheet">
-
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles.css">
-
+    <!-- Title -->
     <title>Flub</title>
-
-
 </head>
 
-
+<!-- Body with onload + Background -->
 
 <body style="visibility:hidden;" onload="js_Load()">
     <div id="mainContainer">
+        <!-- Header IMGs -->
         <img src="./imgs/pages/logo.png" alt="Flub" style="width: 60%; display: block; margin: 10px auto 0px auto"
             id="headLogo">
         <img src="./imgs/pages/definition.png" alt="Flub" id="definition">
+        <!-- Collapsible div -->
         <div class="mainCollapsible">
             <ul class="collapsible">
                 <li>
+                    <!-- Bio button -->
                     <div class="collapsible-header" id="bioHeader"
                         style="background: url(imgs/buttons/button\ 1\ -\ biography.png)">
                     </div>
+                    <!-- body -->
                     <div class="collapsible-body">
                         <img src="./imgs/pages/biography.png" alt="bio" style="width: 100%; margin: 5px auto">
                     </div>
                 </li>
                 <li>
+                    <!-- Tour dates button -->
                     <div class="collapsible-header" id="showsHeader"
                         style="background: url(imgs/buttons/button\ 2\ -\ tourdates.png)">
                     </div>
+                    <!-- body -->
                     <div class="collapsible-body">
-                        <!-- SHOWS IMG -->
                         <div class="rainbowBody">
                             <img src="./imgs/pages/tourdates.png" alt="Absolute Unit"
                                 style="width: 100%; margin: 0px auto -10px auto">
@@ -83,11 +66,12 @@
                     </div>
                 </li>
                 <li>
+                    <!-- News button -->
                     <div class="collapsible-header" id="newsHeader"
                         style="background: url(imgs/buttons/button\ 3\ -\ news.png)">
                     </div>
+                    <!-- body -->
                     <div class="collapsible-body">
-                        <!-- NEWS IMG -->
                         <div class="rainbowBody">
                             <img src="./imgs/pages/news.png" alt="Absolute Unit"
                                 style="width: 100%; margin: 0px auto -10px auto">
@@ -103,13 +87,16 @@
                     </div>
                 </li>
                 <li>
+                    <!-- Discography button -->
                     <div class="collapsible-header" id="discographyHeader"
                         style="background: url(imgs/buttons/button\ 4\ -\ discography.png)">
                     </div>
+                    <!-- body -->
                     <div class="collapsible-body">
                         <div class="rainbowBody">
                             <img src="./imgs/pages/discography.png" alt="Flub Logo"
                                 style="width: 100%; margin: 0px auto -15px auto;">
+                            <!-- Albums + info -->
                             <div class="row" style="margin: 20px auto">
                                 <div class="col s6">
                                     <a href="https://flub.bandcamp.com/album/flub">
@@ -158,11 +145,12 @@
                     </div>
                 </li>
                 <li>
+                    <!-- Video button -->
                     <div class="collapsible-header" id="videosHeader"
                         style="background: url(imgs/buttons/button\ 5\ -\ video.png)">
                     </div>
+                    <!-- body -->
                     <div class="collapsible-body">
-                        <!-- VIDEO IMG -->
                         <div class="rainbowBody">
                             <img src="./imgs/pages/videos.png" alt="Absolute Unit"
                                 style="width: 100%; margin: 0px auto -10px auto">
@@ -188,16 +176,15 @@
                     </div>
                 </li>
                 <li>
+                    <!-- Merch button -->
                     <div class="collapsible-header" id="merchHeader"
                         style="background: url(imgs/buttons/button\ 6\ -\ merchandise.png)">
                     </div>
+                    <!-- body -->
                     <div class="collapsible-body">
-
-                        <!-- MERCH IMG -->
                         <div class="rainbowBody">
                             <img src="./imgs/pages/merch.png" alt="Absolute Unit"
                                 style="width: 100%; margin: 0px auto -10px auto">
-
                             <div class="row">
                                 <div class="col s12 m6 l6">
                                     <a href="https://flub.bigcartel.com/">
@@ -219,16 +206,17 @@
                     </div>
                 </li>
                 <li>
+                    <!-- Follow button -->
                     <div class="collapsible-header" id="followHeader"
                         style="background: url(imgs/buttons/button\ 7\ -\ follow.png)">
                     </div>
+                    <!-- body -->
                     <div class="collapsible-body">
-                        <!-- FOLLOW IMG -->
                         <div class="rainbowBody">
                             <img src="./imgs/pages/follow.png" alt="Flub Icon"
                                 style="width: 100%; margin: 0px auto -10px auto">
 
-                            <!-- FOLLOW LINKS -->
+                            <!-- Follow links -->
                             <div class="row" style="margin: 25px auto">
                                 <a href="https://www.facebook.com/flubmetal">
                                     <div class="col s2 offset-s1"><img style="width: 115%" src="./imgs/links/fb.png"
@@ -288,11 +276,12 @@
                     </div>
                 </li>
                 <li>
+                    <!-- Flub club button -->
                     <div class="collapsible-header" id="flubClubHeader"
                         style="background: url(imgs/buttons/button\ 8\ -\ flubclub.png)">
                     </div>
+                    <!-- body -->
                     <div class="collapsible-body">
-                        <!-- FLUB CLUB IMG -->
                         <div class="rainbowBody">
                             <img src="./imgs/pages/flubclub.png" alt="The Boys"
                                 style="width: 100%; margin: 0px auto -10px auto">
@@ -305,6 +294,7 @@
                                     CONTENT
                                     EXCLUSIVE DISCOUNTS, AND MYSTERY GIFTS</h6>
                                 <h6>SUBSCRIBE TO OUR MAILING LIST BELOW</h6>
+                                <!-- FC Signup -->
                                 <div class="row">
                                     <div class="input-field col s12" style="width: 95%">
                                         <i class="material-icons prefix">email</i>
@@ -313,10 +303,10 @@
                                     </div>
                                     <button class="btn waves-effect waves-light" type="submit" name="action"
                                         id="FCSignupButton">Sign up
-                                        <i class="material-icons right">send</i>
-                                    </button>
+                                        <i class="material-icons right">send</i></button>
                                 </div>
                             </div>
+                            <!-- FC Thanks message -->
                             <div id="thanksSignup" class="hide" style="padding: 15px">
                                 <h5 id="signedupEmail" style="word-wrap: break-word;"></h5>
                                 <h5>HAS BEEN SIGNED UP!</h5>
@@ -326,12 +316,12 @@
                     </div>
                 </li>
                 <li>
+                    <!-- Contact button -->
                     <div class="collapsible-header" id="contactHeader"
                         style="background: url(imgs/buttons/button\ 9\ -\ contact.png)">
                     </div>
+                    <!-- body -->
                     <div class="collapsible-body">
-
-                        <!-- CONTACT IMG -->
                         <div class="rainbowBody" id="contactBody">
                             <img src="./imgs/pages/logo.png" alt="Flub"
                                 style="width: 75%; margin: 10px auto -10px auto; display: block">
@@ -341,26 +331,13 @@
                             <h5 class="flow-text">PRESS CONTACT / GENERAL INQUIRIES</h5>
                             <h6 class="flow-text contactEmails">ALVASHREDD16@GMAIL.COM</h6>
                         </div>
-
                     </div>
                 </li>
             </ul>
         </div>
     </div>
-
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script> -->
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script> -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./logic.js"></script>
-
 </body>
-
-
 
 </html>

@@ -1,10 +1,12 @@
+// Onload
 function js_Load() {
     document.body.style.visibility = 'visible'
 }
+// Also onload
 $(document).ready(function () {
+    // Materialize init
     $('.collapsible').collapsible();
     $('.materialboxed').materialbox();
-
 
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -20,16 +22,23 @@ $(document).ready(function () {
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     var database = firebase.database()
+
+    // Empty signup
     let newSignup = ""
+
+    // On flub club submission
     $("#FCSignupButton").on("click", function () {
         let newSignup = $("#signupEmail").val()
+        // Validation
         if (newSignup === "") {
             alert("Please fill out the input")
         } else {
-            $("#signedupEmail").html(newSignup)
+            // Send to firebase
             firebase.database().ref().push({
                 email: newSignup,
             })
+            // Toggle signup message
+            $("#signedupEmail").html(newSignup)
             $("#FCSignup").addClass("hide")
             $("#thanksSignup").removeClass("hide")
         }
