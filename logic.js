@@ -30,16 +30,18 @@ $(document).ready(function () {
             date: "1-24",
             day: "24",
             month: "1",
+            year: "2020",
             city: "Orangeville, Ca",
             venue: "The Boardwalk",
             time: "TBD",
             bands: ["The Kennedy Veil", "Flub", "Equipoise"],
-            link: ""
+            link: "https://tickets.national-acts.com/event/tkv01242020"
         },
         {
             date: "1-25",
             day: "25",
             month: "1",
+            year: "2020",
             city: "Lakewood, Ca",
             venue: "Regal Inn",
             time: "TBD",
@@ -50,23 +52,50 @@ $(document).ready(function () {
             date: "1-26",
             day: "26",
             month: "1",
+            year: "2020",
             city: "Santa Rosa, Ca",
             venue: "The Arlene Francis Center",
             time: "TBD",
             bands: ["The Kennedy Veil", "Flub", "Equipoise"],
             link: ""
-        }
+        },
     ]
 
     // Date functions
     let D = new Date()
     let currentDay = D.getDate()
     let currentMonth = (D.getMonth() + 1)
+    let currentYear = D.getFullYear()
 
     // Render Shows
     for (let i = 0; i < shows.length; i++) {
-        // Check dates
-        if ((shows[i].day - currentDay) >= 0 && (shows[i].month - currentMonth) >= 0) {
+        // If no link & in future (change later)
+        if ((shows[i].day - currentDay) >= 0 && (shows[i].month - currentMonth) >= 0 && (shows[i].year - currentYear) >= 0 && shows[i].link === "") {
+            let showListItem = (`
+        <li>
+            <div class="collapsible-header" style="background: none; border: gold solid 1px; border-radius: 15px">
+                <div style="width: 25%">${shows[i].date}</div><div style="width: 75%">${shows[i].city}</div>
+            </div>
+            <div class="collapsible-body" style="border: none; padding: 0px">
+                <div class="row">
+                    <div class="col s8"><h6>Venue</h6><p style="word-wrap: break-word">${shows[i].venue}</p></div>
+                    <div class="col s4"><h6>Time</h6><p>${shows[i].time}</p></div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <h6>Bands</h6><ol>${shows[i].bands.map(function (band) { return "<li>" + band + "</li>" })}</ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <a class="waves-effect waves-light btn buyTickets" href="#">TICKETS AT DOOR</a>
+                    </div>
+                </div>
+            </div>
+        </li>`)
+            $("#showCollapsible").append(showListItem)
+        } else if ((shows[i].day - currentDay) >= 0 && (shows[i].month - currentMonth) >= 0 && (shows[i].year - currentYear) >= 0 && shows[i].link !== "") {
+            // If link & in future (change later)
             let showListItem = (`
         <li>
             <div class="collapsible-header" style="background: none; border: gold solid 1px; border-radius: 15px">

@@ -10,7 +10,7 @@ body {
 }
 #mainContainer{
     width: 85%;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 #definition{
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
