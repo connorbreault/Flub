@@ -33,8 +33,8 @@ $(document).ready(function () {
             year: "2020",
             city: "Orangeville, Ca",
             venue: "The Boardwalk",
-            time: "TBD",
-            bands: ["The Kennedy Veil", "Flub", "Equipoise"],
+            time: "6:30 PM",
+            bands: ["The Kennedy Veil", "Flub", "Equipoise", "Tyrannocannon", "Smack'd Up", "Bavmorda"],
             link: "https://tickets.national-acts.com/event/tkv01242020"
         },
         {
@@ -44,9 +44,9 @@ $(document).ready(function () {
             year: "2020",
             city: "Lakewood, Ca",
             venue: "Regal Inn",
-            time: "TBD",
-            bands: ["The Kennedy Veil", "Flub", "Equipoise"],
-            link: ""
+            time: "7 PM",
+            bands: ["The Kennedy Veil", "The Last of Lucy", "Flub", "Equipoise", "Hailbrook Hollow"],
+            link: "https://tkvsocal.bpt.me/?fbclid=IwAR2_abzDSFLQ8uC37JzmJRkCI67ncTZq-zi721AeMx6JQREynKEj5xe_qzM"
         },
         {
             date: "1-26",
@@ -55,7 +55,7 @@ $(document).ready(function () {
             year: "2020",
             city: "Santa Rosa, Ca",
             venue: "The Arlene Francis Center",
-            time: "TBD",
+            time: "6 PM",
             bands: ["The Kennedy Veil", "Flub", "Equipoise"],
             link: ""
         },
