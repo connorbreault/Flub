@@ -1,3 +1,4 @@
+/* Body/Background */
 body { 
     background: black;
     background: url(imgs/background.png) no-repeat; 
@@ -5,13 +6,16 @@ body {
     background-position: top;
     background-attachment: fixed
 }
+/* Flub definition */
 #definition{
     width: 75%;
 }
+/* Container for all items */
 #mainContainer{
     width: 85%;
     margin: 30px auto;
 }
+/* Fade in animations */
 #definition{
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -37,7 +41,6 @@ body {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Firefox < 16 */
 @-moz-keyframes fadein {
     from { opacity: 0; }
@@ -55,6 +58,7 @@ body {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+/* Main collapsible headers/imgs */
 .mainHeader{
     height: 65px;
     background-size: cover !important;
@@ -71,6 +75,7 @@ body {
     -moz-box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
     box-shadow: inset 0px 0px 80px 25px rgba(148,40,88,0.2);
 }
+/* Body of opened collapsible */
 .mainBody{
     padding: 0px;
     border: none
@@ -88,6 +93,32 @@ body {
     color: white;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.69);
 }
+
+/* News post imgs */
+.newsImg:hover{
+    -webkit-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+    -moz-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+    box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
+}
+
+/* Shows collapsible */
+.buyTickets{
+    background: none;
+    border: gold solid 1px;
+    border-radius: 20px;
+}
+.buyTickets:hover{
+    color: gold;
+    -webkit-box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
+    background: none !important
+}
+
+/* Links for music/merch/youtube */
+.albumCover{
+    width: 100%
+}
 .linkText{
     color: white;
     text-decoration: underline white;
@@ -103,11 +134,10 @@ body {
     -moz-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
     box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
 }
+
+/* Flub club signup form */
 #contactBody{
     padding: 15px !important
-}
-.albumCover{
-    width: 100%
 }
 .contactEmails{
     font-size: 10px
@@ -119,32 +149,21 @@ body {
     border: #01BAEF 2px solid;
     color: #01BAEF
 }
+
+/* Link resizes */
 #bcLink{
     width: 125% !important;
 }
-.newsImg:hover{
-    -webkit-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
-    -moz-box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
-    box-shadow: inset 0px 0px 37px 12px rgba(87,157,153,0.5);
-}
-.buyTickets{
-    background: none;
-    border: gold solid 1px;
-    border-radius: 20px;
-}
-.buyTickets:hover{
-    color: gold;
-    -webkit-box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 17px 9px rgba(0,0,0,0.75);
-    background: none !important
-}
 
+/* MEDIA QUERIES */
+
+/* OVER 350px */
 @media only screen and ( min-width: 350px ) {
     .contactEmails{
     font-size: inherit
     }
 }
+/* OVER 545px */
 @media only screen and ( min-width: 545px ) {
 body{
     background-size: cover;
@@ -163,6 +182,7 @@ body{
     font-size: inherit
 }
 }
+/* OVER 800px */
 @media only screen and ( min-width: 800px ) {
     #mainContainer{
         width: 35%
