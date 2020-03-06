@@ -136,6 +136,16 @@ $(document).ready(function () {
                 email: newSignup,
                 joined: firebase.database.ServerValue.TIMESTAMP
             })
+            // var templateParams = {
+            //     member: newSignup,
+            // }
+            // emailjs.send('default_service', 'template_b4MmI7CD', templateParams)
+            //     .then(function (response) {
+            //         console.log('Sucessful message send!')
+            //         messageNum++
+            //     }, function (error) {
+            //         console.log('FAILED TO SEND AUTO-REPLY...', error)
+            //     });
             // Toggle signup message
             $("#signedupEmail").html(newSignup)
             $("#FCSignup").addClass("hide")
