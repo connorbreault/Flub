@@ -141,7 +141,7 @@ $(document).ready(function () {
             }
             emailjs.send('default_service', 'flubClubSignup', templateParams)
                 .then(function (response) {
-                    console.log('Sucessful message send!')
+                    console.log('Sucessful signup message send!')
                 }, function (error) {
                     console.log('FAILED TO SEND AUTO-REPLY...', error)
                 });
